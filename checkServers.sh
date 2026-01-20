@@ -1,6 +1,8 @@
 #!/bin/sh
 
 
+while true
+do 
 echo "| server | status |" > README.md
 echo "| ------ | ------ |" >> README.md
 
@@ -36,3 +38,5 @@ fi
 git add README.md
 git commit -m "update status"
 git push
+sleep 60
+done
